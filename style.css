@@ -1,0 +1,117 @@
+body{
+    height:100%;
+}
+#container{
+    position: relative;
+    /* min-height: 100%; */
+    height: 100vh;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: 1fr  12fr  3fr;
+    grid-template-areas:
+      "u"
+      "m"
+      "bo";
+     
+    /* margin: auto; */
+    /* width: 50%; */
+     border: 4px solid green;
+     padding: 2px; 
+     /* min-width: 735px; */
+}
+
+.head{
+    grid-area: u;
+    background-color: lightgreen;
+    text-align: center;
+    
+}
+
+
+.main{
+    position: relative;
+    grid-area: m;
+    background-color: greenyellow;
+    /* max-height: 507.2px; */
+    
+}
+.bottom{
+    /* height: 100vh; */
+    grid-area: bo;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: 
+    "a b c";
+    /* position: relative; */
+    /* max-height: 126.925px; */
+
+}
+.bt1{
+    grid-area: a;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 126.925px;
+    /* max-height: 126.925px; */
+}
+
+
+
+.bt2{
+    grid-area: b;
+    background-color: lightblue;
+    align-content: center;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    /* max-height: 126.925px; */
+}
+.bt3{
+    grid-area: c;
+    background-color: lightgreen;
+    text-align: center;
+    /* margin: auto; */
+    /* position: absolute; */
+    box-shadow: 5px ,2px, 3px;
+    line-height: 126.925px;
+    /* max-height: 126.925px; */
+      
+}
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.game-over{
+    /* position: absolute;   */
+    text-align: center;
+    line-height:50vh;
+    font-weight:bold;
+    font-size: 30px;
+    max-height: 100px;
+    max-width: max-content;
+    margin: auto;
+}
+@media(max-width: 375px){
+    .body  {
+      max-width: 375px;
+    }
+  }
+  @media(max-width: 375px){
+    .game-over {
+      font-size: 15px;
+      
+    }
+  }
+  @media(max-width: 375px){
+    .bt3 {
+      font-size: 10px;
+      
+    }
+}
+@media(min-width: 1000px){
+    #container {
+      margin: auto;
+    width: 50%;
+      
+    }
+}
